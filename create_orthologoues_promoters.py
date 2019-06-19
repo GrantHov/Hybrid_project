@@ -1,5 +1,5 @@
 with open("../../orth_list_SC_SB.txt","r+") as orthologs,\
-open("SC_1000bp_promoters.bed") as SC_intervals,\
+open("SC_promoters_1000bp.bed") as SC_intervals,\
 open("SU_promoters_1000bp.bed") as SU_intervals,\
 open("SC_orth_promoters.bed","w") as SC_orth,\
 open("SU_orth_promoters.bed","w") as SU_orth,\
