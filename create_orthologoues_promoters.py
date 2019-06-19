@@ -1,4 +1,7 @@
-with open("../../orth_list_SC_SB.txt","r+") as orthologs,\
+### orth_list_SC_SB.txt -  list of orthologous genes for S. cerevisiae and S. uvarum, available at http://www.saccharomycessensustricto.org/cgi-bin/s3.cgi?data=Orthologs&version=current
+### SC_promoters_1000bp.bed and SU_promoters_1000bp.bed are generated in the previous step
+
+with open("orth_list_SC_SB.txt","r+") as orthologs,\
 open("SC_promoters_1000bp.bed") as SC_intervals,\
 open("SU_promoters_1000bp.bed") as SU_intervals,\
 open("SC_orth_promoters.bed","w") as SC_orth,\
