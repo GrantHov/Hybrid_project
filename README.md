@@ -13,3 +13,7 @@ python promoters_mod.py Saccharomyces_cerevisiae.R64-1-1.93.gtf Saccharomyces_ce
 
 
 Then run the script `create_orthologous_promoters.py` using the bed files created by the previous script.
+
+
+
+To obtain the possibly regulated closest genes to ATACseq peaks, run the commands finding_cis_genes.txt
