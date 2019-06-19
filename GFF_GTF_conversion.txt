@@ -1,0 +1,12 @@
+### Manual processing of initial gff file
+sed "s/ Zill /_Zill_/g" Sbay.gff | sed "s/ORF/CDS/g" | sed "s/pseudogene/CDS/g" | sed "s/tRNA/CDS/g" | sed "s/dispersed repeat/CDS/" | sed "s/intergenic region/CDS/g"| sed "s/sequence feature/CDS/g" >Sbay_rebuilt.gff
+
+### Confersion to gtf format
+gffread Sbay_rebuilt.gff -T -o Sbay.gtf
+
+### Manual process of intermediate gtf file
+sed "s/gene_name/gene_id/g" Sbay.gtf | sed "s/CDS/exon/g" > Sbay_rebuilt.gtf
+
+### Final gtf file 
+cat Sbay_rebuilt.gtf ERCC92.gtf > Sbay_AND_ERCC.gtf
+
