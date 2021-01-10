@@ -8,7 +8,7 @@ Hybrid_project
 Example:
 
 ```bash
-python promoters_mod.py Saccharomyces_cerevisiae.R64-1-1.93.gtf Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa SC_promoters_1000bp.fasta > SC_promoters_1000bp.bed
+python create_promoters.py Saccharomyces_cerevisiae.R64-1-1.93.gtf Saccharomyces_cerevisiae.R64-1-1.dna.toplevel.fa SC_promoters_1000bp.fasta > SC_promoters_1000bp.bed
 ```
 
 
